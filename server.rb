@@ -1,6 +1,9 @@
 require 'bundler'
 require 'sinatra/base'
 
+Bundler.require(:default)
+Bundler.require(Sinatra::Base.environment)
+
 Dir[File.dirname(__FILE__) + "/app/routes/**"].each do |route|
   require route
 end

@@ -1,17 +1,16 @@
+ENV['RACK_ENV'] = 'test'
 require 'bundler'
-Bundler.require(:test)
+Bundler.require(:default)
+Bundler.require(Sinatra::Base.environment) 
 require 'simplecov'
 SimpleCov.start
-#require 'rack/test'
-#require 'rspec'
 
-ENV['RACK_ENV'] = 'test'
-
-require File.expand_path '../../my-app.rb', __FILE__
+require File.expand_path '../../server.rb', __FILE__
 
 module RSpecMixin
   include Rack::Test::Methods
-  def app() Sinatra::Application end
+  def app() described_class end
+  #def app() Sinatra::Application end
 end
 
 RSpec.configure { |c| c.include RSpecMixin }

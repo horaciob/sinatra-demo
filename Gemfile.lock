@@ -1,0 +1,80 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.3.0)
+    byebug (9.0.6)
+    coderay (1.1.1)
+    diff-lcs (1.3)
+    docile (1.1.5)
+    json (2.1.0)
+    method_source (0.8.2)
+    mustermann (1.0.1)
+    parallel (1.12.0)
+    parser (2.4.0.0)
+      ast (~> 2.2)
+    powerpack (0.1.1)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    puma (3.9.1)
+    rack (2.0.3)
+    rack-protection (2.0.0)
+      rack
+    rack-test (0.7.0)
+      rack (>= 1.0, < 3)
+    rainbow (2.2.2)
+      rake
+    rake (12.1.0)
+    require_all (1.4.0)
+    rspec (3.6.0)
+      rspec-core (~> 3.6.0)
+      rspec-expectations (~> 3.6.0)
+      rspec-mocks (~> 3.6.0)
+    rspec-core (3.6.0)
+      rspec-support (~> 3.6.0)
+    rspec-expectations (3.6.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.6.0)
+    rspec-mocks (3.6.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.6.0)
+    rspec-support (3.6.0)
+    rubocop (0.49.1)
+      parallel (~> 1.10)
+      parser (>= 2.3.3.1, < 3.0)
+      powerpack (~> 0.1)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    ruby-progressbar (1.8.3)
+    simplecov (0.14.1)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.1)
+    sinatra (2.0.0)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.0)
+      tilt (~> 2.0)
+    slop (3.6.0)
+    tilt (2.0.8)
+    unicode-display_width (1.3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug
+  pry
+  puma
+  rack-test
+  require_all
+  rspec
+  rubocop
+  simplecov
+  sinatra
+
+BUNDLED WITH
+   1.14.6
